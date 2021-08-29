@@ -1,0 +1,219 @@
+*::-moz-selection {
+  color: #c9b69b;
+}
+
+*::selection {
+  color: #c9b69b;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: grey;
+}
+
+a:hover {
+  color: #c9b69b !important;
+}
+
+.crno {
+  background-color: #0a0a0a;
+}
+
+.dropdown-menu {
+  min-width: 5rem !important;
+}
+
+#visinaVesti {
+  min-height: 325px;
+    /*width: 90% !important;*/
+}
+
+#slikaIza {
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.pozadinskaSlika {
+  position: relative;
+  /*background-image: url(photo-1580541832626-2a7131ee809f.jpg);*/
+}
+
+.pozadinskaSlika .hoverPrelaz {
+  position: relative;
+  height: 100%;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pozadinskaSlika .hoverPrelaz:hover {
+  background-color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.pozadinskaSlika .hoverPrelaz h2 {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  font-size: 20px;
+}
+
+.zaokrugli {
+  border-radius: 50%;
+  height: 250px !important;
+  width: 250px !important;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.zaokrugli:hover {
+  border-radius: 0%;
+  cursor: pointer;
+}
+
+.page-link {
+  color: #0a0a0a;
+}
+
+.page-item.active .page-link {
+  background-color: #0a0a0a;
+  border-color: #c9b69b;
+}
+
+.uspravnaSlova {
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  text-orientation: upright;
+  /*vertical-align: -webkit-baseline-middle;*/
+}
+
+#tabla .kolona {
+  width: 12.5% !important;
+}
+
+#tabla .kolona figure {
+  width: 100% !important;
+}
+
+.obrni {
+  width: 75% !important;
+}
+
+p{
+    /*white-space: pre;    */
+}
+
+.obrni .col-10:nth-child(even) .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.obrni .col-10:nth-child(even) figure{
+    justify-content: flex-end !important;
+}
+
+input[type=search]{
+    padding: .7rem;
+}
+
+.editComentar{
+    cursor: pointer;
+}
+
+#editKomentar{
+    display: none;
+}
+
+.obrni .col-12:nth-child(even) .row .col-lg-5 {
+  text-align: left !important;
+}
+
+.obrni .col-12:nth-child(even) .row .zaokrugli {
+  border-top-left-radius: 50%;
+  float: right !important;
+}
+
+.obrni .col-12:nth-child(even) .row .zaokrugli:hover {
+  border-radius: 0%;
+  cursor: pointer;
+}
+
+#komentarisanje::before {
+  border-width: 10px;
+  border-bottom-color: red;
+  border: solid transparent;
+  content: " ";
+  position: absolute;
+  height: 0;
+  width: 0;
+  bottom: 100%;
+}
+
+.crtaPosle::after {
+  content: "";
+  width: 5.5%;
+  height: 10px;
+  border-bottom: 4px solid #0a0a0a;
+  position: absolute;
+  top: 75%;
+  left: 48%;
+}
+
+@media screen and (max-width: 991px) {
+  .velikaVisina {
+    min-height: 250px !important;
+  }
+  .uspravnaSlova {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    text-align: center;
+  }
+  #visinaVesti {
+    width: 100% !important;
+  }
+  .skrozSirina {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 1000px) {
+    #tabla .kolona{
+        width: 20% !important;
+    }
+}
+@media screen and (max-width: 776px) {
+  #visinaVesti {
+    width: 90% !important;
+  }
+  #tabla .kolona{
+        width: 30% !important;
+  }
+}
+@media screen and (max-width: 600px) {
+    #tabla .kolona{
+        width: 50% !important;
+    }
+}
+@media screen and (max-width: 450px) {
+    #tabla .kolona{
+        width: 100% !important;
+    }
+}
+/*# sourceMappingURL=style.css.map */
